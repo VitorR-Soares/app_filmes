@@ -1,0 +1,126 @@
+:root {
+    --vermelho: #db4c40;
+    --amarelo: #f0c987;
+    --verde: #89bd9e;
+    --roxo: #3c153b;
+    --vinho: #8b1e3f;
+    --vinhoEscuro: #510014;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cabecalho {
+    background-color: var(--vinhoEscuro);
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+#logo{
+    color: var(--amarelo);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 50px;
+    cursor: pointer;
+}
+#containerPesquisa{
+    background-color: #fff;
+    width: 30vw;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 10px;
+}
+#txtPesquisa{
+    background-color: transparent;
+    border: none;
+    width: inherit; 
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+#btnPesquisa{
+    height: 40px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 20px;
+    width: 15vw;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.btnFav, .btnAss {
+    height: 40px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 20px;
+    width: 7vw;
+    cursor: pointer;
+}
+/* Conteúdo da Página */
+#conteudoQueroAssitir {
+    width: 100%;
+    min-height: 90vh;
+    border: none;
+    background-color: var(--vinho);
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.cardAssistir {
+    background-color: var(--roxo);
+    height: 300px;
+    max-width: 25vw;
+    min-width: 25vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.divPoster {
+    background-color: #fff;
+    height: 250px;
+    width: 187.5px;
+}
+.conteudoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.tituloCard {
+    font-size: 40px;
+    color: var(--amarelo);
+}
+.btnsCardAssistir {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.verDetalhes, .jaAssisti {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+.verDetalhes {
+    background-color: var(--amarelo);
+}
+.jaAssisti {
+    background-color: var(--verde);
+}

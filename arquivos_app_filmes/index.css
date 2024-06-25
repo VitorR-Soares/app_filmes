@@ -1,0 +1,157 @@
+:root {
+    --vermelho: #db4c40;
+    --amarelo: #f0c987;
+    --verde: #89bd9e;
+    --roxo: #3c153b;
+    --vinho: #8b1e3f;
+    --vinhoEscuro: #510014;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cabecalho {
+    background-color: var(--vinhoEscuro);
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+#logo{
+    color: var(--amarelo);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 50px;
+    cursor: pointer;
+}
+#containerPesquisa{
+    background-color: #fff;
+    width: 30vw;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 10px;
+}
+#txtPesquisa{
+    background-color: transparent;
+    border: none;
+    width: inherit; 
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+#btnPesquisa{
+    height: 40px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 20px;
+    width: 15vw;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.btnFav, .btnAss {
+    height: 40px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 20px;
+    width: 7vw;
+    cursor: pointer;
+}
+
+#conteudoLista, #conteudo {
+    width: 100%;
+    min-height: 90vh;
+    border: none;
+    background-color: var(--vinho);
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+/**********************************/
+/*ABA Top 10*/
+.itemCatalogo{
+    display: flex;
+    background-color: var(--roxo);
+    border-radius: 10px;
+    width: 60vw;
+    height: 350px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.posterItem{
+    height: 300px;
+    width: 225px;
+    background-color: #fff;
+}
+.posterItemAdapta{
+    height: 100%;
+    width: 100%;
+}
+.infoItem{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--amarelo);
+}
+.infoPrincipalItem{
+    display: flex;
+    width: inherit;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.tituloItem {
+    width: 33vw;
+    font-size: 30px;
+}
+.sinopseItem{
+    width: 33vw;
+    height: 60%;
+    color: #fff;
+    font-size: larger;
+}
+.btnAddFav{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 360px;
+    border: none;
+    background-color: var(--verde);
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 890px;
+    top: 100px;
+}
+.btnAddAss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-weight: bolder;
+    border-radius: 360px;
+    border: none;
+    background-color: var(--verde);
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 890px;
+    bottom: 100px;
+}
+
+/**************************/
